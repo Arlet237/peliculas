@@ -1,0 +1,80 @@
+/* Estilo general del cuerpo */
+body {
+    background-color: #ffc0cb; /* Fondo rosa */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #4b0082; /* Texto morado oscuro */
+  }
+  
+  /* Contenedor del formulario */
+  fieldset {
+    border: 2px solid #4b0082; /* Borde morado */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff; /* Fondo blanco del formulario */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Títulos */
+  h1 {
+    text-align: center;
+    color: #4b0082; /* Morado oscuro */
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo de la tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  td {
+    padding: 10px;
+    vertical-align: middle;
+  }
+  
+  /* Input y botones */
+  input[type="text"], 
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4b0082; /* Morado */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #7a0da5; /* Morado más claro */
+  }
+  
+  /* Enlace */
+  a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #4b0082;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

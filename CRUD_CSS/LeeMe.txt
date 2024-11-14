@@ -1,0 +1,6 @@
+Esta aplicación es un CRUD simple desarrollado en PHP con arquitectura multicapa (MVC).
+Permite gestionar peliculas mediante creación, edición, listado y eliminación.
+Estructura organizada en carpetas: /app, /public. las cuales contendran algunas sub carpetas 
+para organizar de una manera más comoda de la siguiente manera models, /controllers, /views, esto 
+estara en la carpeta app y ya en la carpeta public contendra /css para el estilo /img para alguas imagenes
+ y /js para algunas funciones que agreguemos 

@@ -1,0 +1,112 @@
+/* Estilo general del cuerpo */
+body {
+  background-color: #ffe4e1; /* Fondo rosa claro */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #4b0082; /* Morado oscuro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Título principal */
+h1 {
+  color: #d63384; /* Rosa vibrante */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Estilo de la tabla */
+table {
+  width: 90%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+thead th {
+  background-color: #c71585; /* Rosa fuerte */
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #d63384;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffc0cb; /* Rosa pastel */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8bbd0; /* Otro tono pastel */
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #d63384;
+  color: #4b0082; /* Texto en morado oscuro */
+}
+
+/* Enlaces dentro de la tabla */
+table a {
+  color: #4b0082;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+table a:hover {
+  color: #7a0da5; /* Morado claro */
+  text-decoration: underline;
+}
+
+/* Botón de alta */
+a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #c71585; /* Rosa fuerte */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  background-color: #d63384; /* Rosa más claro */
+}
+
+/* Adaptabilidad para móviles */
+@media (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  tbody td {
+    display: block;
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
